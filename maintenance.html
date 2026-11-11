@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratil Service Esthétique - طلب صيانة</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f4f6f9;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 450px;
+            margin: 0 auto;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h2 {
+            color: #2c3e50;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        .header p {
+            color: #e67e22;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #333;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 14px;
+            outline: none;
+        }
+        input:focus, select:focus, textarea:focus {
+            border-color: #e67e22;
+        }
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        .btn-submit {
+            width: 100%;
+            padding: 12px;
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .btn-submit:hover {
+            background-color: #1a252f;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            color: #666;
+            text-decoration: none;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h2>طلب صيانة وإصلاح الأجهزة</h2>
+        <p>خلي صالونك ديما جديد مع Ratil</p>
+    </div>
+
+    <form>
+        <div class="form-group">
+            <label for="deviceType">نوع جهاز التجميل:</label>
+            <select id="deviceType" required>
+                <option value="">اختر الجهاز المعطل...</option>
+                <option value="laser">جهاز ليزر لإزالة الشعر</option>
+                <option value="hydrafacial">جهاز هيدرافيشيال (تنظيف بشرة)</option>
+                <option value="cavitation">جهاز كافيتيشن / نحت القوام</option>
+                <option value="other">جهاز تجميل آخر</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="problemDesc">وصف العطل باختصار:</label>
+            <textarea id="problemDesc" placeholder="اكتب المشكلة التي تواجهها في الجهاز..." required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="deviceImage">إرفاق صورة أو فيديو للجهاز (اختياري):</label>
+            <input type="file" id="deviceImage" accept="image/*,video/*">
+        </div>
+
+        <button type="submit" class="btn-submit">إرسال طلب الصيانة</button>
+    </form>
+
+    <a href="main.html" class="back-link">← العودة إلى القائمة الرئيسية</a>
+</div>
+
+</body>
+</html>
