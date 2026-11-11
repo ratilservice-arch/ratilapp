@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2c3e50">
+  <title>RATIL — بدون اتصال</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 24px;
+      display: grid;
+      place-items: center;
+      background: #f4f6f9;
+      color: #2c3e50;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      text-align: center;
+    }
+    main {
+      width: min(100%, 440px);
+      padding: 32px 24px;
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: 0 6px 24px rgba(44, 62, 80, .12);
+    }
+    .symbol { font-size: 48px; }
+    h1 { margin: 12px 0; font-size: 1.5rem; }
+    p { color: #5d6874; line-height: 1.8; }
+    a {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 20px;
+      border-radius: 8px;
+      background: #2c3e50;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="symbol" aria-hidden="true">📡</div>
+    <h1>أنت غير متصل بالإنترنت</h1>
+    <p>يمكنك إعادة فتح الصفحات التي زرتها بعد تحميل التطبيق، أو المحاولة مجددًا عند عودة الاتصال.</p>
+    <a href="./index.html">العودة إلى RATIL</a>
+  </main>
+</body>
+</html>

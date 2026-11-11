@@ -1,0 +1,50 @@
+{
+  "id": "./",
+  "name": "RATIL serviceTech | صيانة أجهزة التجميل",
+  "short_name": "RATIL",
+  "description": "خدمات صيانة أجهزة التجميل والعناية بالبشرة وقطع الغيار.",
+  "lang": "ar-DZ",
+  "dir": "rtl",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "portrait-primary",
+  "theme_color": "#2c3e50",
+  "background_color": "#f4f6f9",
+  "categories": ["business", "shopping", "productivity"],
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "طلب صيانة",
+      "short_name": "الصيانة",
+      "url": "./maintenance.html",
+      "icons": [{ "src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "متجر RATIL",
+      "short_name": "المتجر",
+      "url": "./store.html",
+      "icons": [{ "src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    }
+  ]
+}
