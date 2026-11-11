@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratil Service Esthétique - المتجر</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f4f6f9;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+        .header h2 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        .header p {
+            color: #e67e22;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        .products-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .product-card {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .product-info h3 {
+            font-size: 16px;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        .product-info p {
+            font-size: 12px;
+            color: #666;
+        }
+        .btn-order {
+            padding: 8px 15px;
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+            text-decoration: none;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h2>متجر الأجهزة وقطع الغيار</h2>
+        <p>خلي صالونك ديما جديد مع Ratil</p>
+    </div>
+
+    <div class="products-grid">
+        <!-- منتج 1 -->
+        <div class="product-card">
+            <div class="product-info">
+                <h3>أجهزة التجميل والعناية بالبشرة</h3>
+                <p>طلب أجهزة جديدة أو استفسار عن المواصفات</p>
+            </div>
+            <button class="btn-order" onclick="alert('تم تفعيل الطلب! سنتصل بك فوراً.')">طلب الان</button>
+        </div>
+
+        <!-- منتج 2 -->
+        <div class="product-card">
+            <div class="product-info">
+                <h3>قطع الغيار والمستلزمات</h3>
+                <p>فلاتر، كوابل، وقطع استهلاكية أصليّة</p>
+            </div>
+            <button class="btn-order" onclick="alert('تم تفعيل الطلب! سنتصل بك فوراً.')">طلب الان</button>
+        </div>
+    </div>
+
+    <a href="main.html" class="back-link">← العودة إلى القائمة الرئيسية</a>
+</div>
+
+</body>
+</html>
